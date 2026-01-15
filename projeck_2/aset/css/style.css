@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    background-color: rgb(21, 21, 106);
+}
+.container-hero{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 1%;
+}
+
+
+.blur{
+    background-color: rgb(28, 28, 82);
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    filter: blur(3em);
+}
+.left-content{
+    padding: 20px;
+    margin-top: 10%;
+    width: 40%;
+    height: auto;
+    z-index: 2;
+}
+
+.left-content > h3{
+    color: white;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-content > h3::before{
+    content: "// ";
+    color: rgb(60, 60, 169);
+}
+
+.left-content > h1{
+    color: white;
+    font-size: 4em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.left-content > p{
+    margin: 30px 0 ;
+    font-size: 1em;
+    color: white;
+    font-weight: 100;
+}
+
+.left-content .button{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+}
+
+.left-content .button button{
+    width: 30%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 70%;
+}
+
+.left-content .button > a{
+    text-align: center;
+    align-items: center;
+    margin-left: 4em;
+    color: white;
+    text-transform: capitalize;
+}
+
+.left-content .button > a:hover{
+    text-decoration-line: underline;
+}
+
+/* :right */
+
+.right-content{
+    width: 44%;
+    height: 100%;
+    opacity: 0.5;
+}
+.right-content > img{
+    width: 47em;
+}
+
+/* .content */
+.content-job{
+    max-width: 100%;
+    background-color: rgb(10, 10, 236);
+    height: max-content;
+    color: white;
+    overflow: hidden;
+}
+
+.isi-job{
+    padding: 20px 0;
+    display: flex;
+    gap: 4em;
+    text-transform: capitalize;
+    padding-left: 30px;
+    font-size: 1.3em;
+    white-space: nowrap;
+    animation: content 10s linear infinite;
+    width: max-content;
+}
+
+.isi-job > h3::before{
+    content: "✳";
+    margin-right: 10px;
+}
+
+@keyframes content {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Bergerak setengah dari total width */
+    }
+}
+
+.about{
+    /* width: 100%; */
+    height: 100vh;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-about{
+    display: flex;
+    padding: 100px;
+    gap: 10em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-left{
+    position: relative;
+}
+
+.cover-image {
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+    grid-template-rows: repeat(2, 13em);
+    gap: 10px;
+    background-color: rgb(49, 49, 163);
+    overflow: hidden;
+    border: 3px solid black;
+    z-index: 999;
+    border-radius: 50px;
+    animation: bergerak-img 5s linear infinite;
+    animation-iteration-count: view();
+}
+
+@keyframes bergerak-img {
+    0%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(40px);
+    }
+    80%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    background-color: blue;
+    background-size: cover;
+    width:20em;
+    background-image: url(/aset/img/PinDown.io_@faisalrosady_1767887406.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.div2 {
+    grid-column-start: 3;
+    background-color: blue;
+    width:10.5em;
+    margin-left: -0.50em;
+    background-image: url(/aset/img/PinDown.io_@Ketuakelas7_1767839012.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.div3 {
+    grid-row-start: 2;
+    background-color: blue;
+    width:10.5em;
+        background-image: url(/aset/img/PinDown.io_@Bbhkyong_1758942316.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+    background-color: blue;
+    width:20em;
+    margin-left: 0.65em;
+        background-image: url(/aset/img/PinDown.io_@panturack_1767838026.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.box1{
+    border-top-left-radius: 70px;
+    width: 40%;
+    height: 40%;
+    background-color: blue;
+    position: absolute;
+    top: -30px;;
+    left: -30px;
+    z-index: -1;
+}
+
+.box2{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-bottom-right-radius: 70px;
+    background-color: blue;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+}
+
+.about-right{
+    text-transform: capitalize;
+    position: relative;
+    top: 30px;
+    
+}
+
+.about-right > h3{
+    font-weight: 100;
+}
+.about-right > h3::before{
+    content: "//";
+    margin-right: 10px;
+}
+
+.about-right > h2{
+    width: 70%;
+    font-size: 2.7em;
+}
+.about-right > h2 span{
+    color: blue;
+}
+
+.about-right p {
+    width: 80%;
+}
+
+.data{
+    display: flex;
+    gap: 2em;
+    margin-top: 20px;
+}
+
+.box{
+    width: 9em;
+}
+.box h2{
+    color: blue;
+}
+
+.tanda-tangan{
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.tanda-tangan h2{
+    font-family: "Yellowtail", cursive;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+.services{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(207, 214, 219);
+    text-transform: capitalize;
+
+}
+
+.container-ser{
+    margin-left: 5cap;
+    margin-right: 5cap;
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.judul-ser > h3{
+    font-weight: 100;
+    font-size: 1em;
+}
+.judul-ser > h3::before{
+    content: "//";
+    margin-right: 10px;
+}
+
+.judul-ser > h2 {
+    font-size: 2.5em;
+    max-width: 60%;
+}
+.judul-ser > h2 > span{
+    color: blue;
+}
+
+.container-ser > button{
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.container-box{
+    display: flex;
+    margin-left: 5cap;
+    margin-right: 5cap;
+    padding-top: 20px;
+    gap: 3em;
+}
+
+.box-ser{
+    width: max-content;
+    padding: 20px;
+    position: relative;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.box-ser.active{
+    box-shadow: 0 5px 0 blue;
+    transform: translatey(-10px);
+}
+.box-ser:hover{
+    transform: translatey(-10px);
+    box-shadow: 0 5px 0 blue;
+}
+
+.content{
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+
+.box-ser > a::after{
+    content: "⤑";
+    margin-left: 20px;
+    font-size: 1.5em;    
+    font-weight: bold;
+    position: initial;
+    top: -20px;
+
+}
+.box-ser > a{
+
+    position: absolute;
+    align-items: center;
+    width: 220px;
+    bottom: 20px;
+    color: black;
+
+}
+
+
+.teks > h3{
+    margin-bottom: 20px;
+}
+
+/* work  */
+.process{
+    background-color: #fff;
+    height: max-content;
+}
+
+.judul-pros{
+    text-align: center;
+    padding: 100px;
+    text-transform: capitalize;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.judul-pros > h3::before{
+    content: "//";
+    margin-right: 10px;
+}
+.judul-pros h3{
+    font-weight: 100;
+}
+.judul-pros h2 span{
+    color: blue;
+}
+.judul-pros h2{
+    font-size: 2rem;
+}
+
+
+.container-process{
+    display: flex;
+    margin-top: 10px;
+    padding: 100px;
+    align-items: center; 
+    /* gap: 5em; */
+    justify-content: center;
+}
+
+.logo-prosces{
+    background-color: blue;
+    border-radius: 50%;
+    width: 90px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 90px;
+}
+
+.garis{
+    width: 50px;
+    height: 4px;
+    position: relative;
+    top: -50px;
+    align-items: center;
+    background-color: black;
+}
+
+.box-pro{
+    text-transform: capitalize;
+    width: 200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tahap{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    bottom: 30px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.isi p {
+    margin-top: 10px;
+}
+
+.img-pro{ 
+    width: 30px;
+    height: 30px;
+    margin-left: 35%;
+    margin-top: 35%;
+    color: #fff;
+}
+
+
+/* .foter */
+.footer-job{
+    width: 100%;
+    background-color: rgb(10, 10, 236);
+    height: max-content;
+    color: white;
+    overflow: hidden;
+}
+
+.footer-isi-job{
+    padding: 20px 0;
+    display: flex;
+    gap: 4em;
+    text-transform: capitalize;
+    padding-left: 80px;
+    font-size: 1.3em;
+    white-space: nowrap;
+    animation: footer 10s linear infinite;
+    width: max-content;
+}
+
+.footer-isi-job > h3::before{
+    content: "✳";
+    margin-right: 10px;
+}
+
+@keyframes footer {
+    0% {
+        transform: translateX(0); /* Bergerak setengah dari total width */
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}

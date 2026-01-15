@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (1:1.4.3+202512261035+0d15f75042)"
+   sodipodi:docname="LOGO.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.16860253"
+     inkscape:cx="231.31326"
+     inkscape:cy="714.69866"
+     inkscape:window-width="1536"
+     inkscape:window-height="795"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="185.74714,161.45447"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g17"
+       transform="matrix(2.5133022,0,0,3.1565566,-197.37377,-242.85494)">
+      <ellipse
+         style="fill:none;stroke-width:0.277737"
+         id="path16"
+         cx="120.67372"
+         cy="123.92725"
+         rx="38.282696"
+         ry="36.668098" />
+      <ellipse
+         style="fill:none;stroke-width:0.231184"
+         id="path16-4"
+         cx="120.67372"
+         cy="123.39809"
+         rx="31.76354"
+         ry="30.620422" />
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;font-family:P052;-inkscape-font-specification:'P052 Bold Italic';writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:50.1026;display:inline;fill:#000080;stroke-width:0.264583"
+         x="105"
+         y="148.5"
+         id="text14"
+         transform="matrix(1,0,0,1.0239511,-10.178643,-10.495663)"><tspan
+           x="105"
+           y="148.5"
+           id="tspan2">I</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9709px;font-family:P052;-inkscape-font-specification:'P052 Bold Italic';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.275889"
+         x="110.70036"
+         y="144.15709"
+         id="text16"
+         transform="scale(1.0183367,0.98199347)"><tspan
+           sodipodi:role="line"
+           id="tspan16"
+           style="fill:#0000ff;stroke-width:0.275889"
+           x="110.70036"
+           y="144.15709">T</tspan></text>
+    </g>
+  </g>
+</svg>
